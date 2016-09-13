@@ -8,3 +8,6 @@ Build
 Makefile
 MANIFEST.bak
 Alien-Capstone-*.tar.gz
+MYMETA.*
+_share
+_alien
