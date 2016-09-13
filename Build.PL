@@ -41,6 +41,12 @@ my $build = Alien::Base::ModuleBuild->new(
         '%{gmake} install PREFIX=%s',
     ],
     alien_version_check => '%{pkg_config} --atleast-version 3.0.4 %n && %{pkg_config} --modversion %n',
+    meta_merge => {
+        resources => {
+            repository => 'https://github.com/selectiveintellect/p5-alien-capstone',
+            bugtracker => 'https://github.com/selectiveintellect/p5-alien-capstone/issues',
+        },
+    },
 );
 
 $build->create_build_script;
@@ -49,5 +55,6 @@ $build->dispatch('manifest');
 $build->dispatch('build');
 
 __END__
-
-
+#### COPYRIGHT: Selective Intellect LLC.
+#### AUTHOR: Vikas N Kumar
+#### DATE: 13 September 2016

@@ -17,7 +17,6 @@
       "build" : {
          "requires" : {
             "Alien::Base::ModuleBuild" : "0.029",
-            "Alien::gmake" : "0.11",
             "Module::Build" : "0",
             "Test::Alien" : "0",
             "Test::More" : "0"
@@ -39,14 +38,20 @@
    "provides" : {
       "Alien::Capstone" : {
          "file" : "lib/Alien/Capstone.pm",
-         "version" : "0.01"
+         "version" : "0.02"
       }
    },
    "release_status" : "stable",
    "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/selectiveintellect/p5-alien-capstone/issues"
+      },
       "license" : [
          "http://www.opensource.org/licenses/mit-license.php"
-      ]
+      ],
+      "repository" : {
+         "url" : "https://github.com/selectiveintellect/p5-alien-capstone"
+      }
    },
-   "version" : "0.01"
+   "version" : "0.02"
 }
