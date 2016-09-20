@@ -18,14 +18,15 @@
          "requires" : {
             "Alien::Base::ModuleBuild" : "0.029",
             "Module::Build" : "0",
-            "Test::Alien" : "0",
-            "Test::More" : "0"
+            "Test2" : "0",
+            "Test::Alien" : "0"
          }
       },
       "configure" : {
          "requires" : {
             "Alien::Base::ModuleBuild" : "0.029",
-            "Module::Build" : "0"
+            "Module::Build" : "0",
+            "Pod::Readme" : "0"
          }
       },
       "runtime" : {
@@ -38,7 +39,7 @@
    "provides" : {
       "Alien::Capstone" : {
          "file" : "lib/Alien/Capstone.pm",
-         "version" : "0.04"
+         "version" : "0.05"
       }
    },
    "release_status" : "stable",
@@ -53,5 +54,5 @@
          "url" : "https://github.com/selectiveintellect/p5-alien-capstone"
       }
    },
-   "version" : "0.04"
+   "version" : "0.05"
 }

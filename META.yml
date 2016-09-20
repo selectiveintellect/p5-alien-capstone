@@ -5,11 +5,12 @@ author:
 build_requires:
   Alien::Base::ModuleBuild: '0.029'
   Module::Build: '0'
+  Test2: '0'
   Test::Alien: '0'
-  Test::More: '0'
 configure_requires:
   Alien::Base::ModuleBuild: '0.029'
   Module::Build: '0'
+  Pod::Readme: '0'
 dynamic_config: 1
 generated_by: 'Module::Build version 0.4211, CPAN::Meta::Converter version 2.143240'
 license: mit
@@ -20,7 +21,7 @@ name: Alien-Capstone
 provides:
   Alien::Capstone:
     file: lib/Alien/Capstone.pm
-    version: '0.04'
+    version: '0.05'
 requires:
   Alien::Base: '0.029'
   File::ShareDir: '1.00'
@@ -28,4 +29,4 @@ resources:
   bugtracker: https://github.com/selectiveintellect/p5-alien-capstone/issues
   license: http://www.opensource.org/licenses/mit-license.php
   repository: https://github.com/selectiveintellect/p5-alien-capstone
-version: '0.04'
+version: '0.05'

@@ -7,15 +7,17 @@ my $build = Alien::Base::ModuleBuild->new(
     license => 'mit',
     dist_author => 'Vikas N. Kumar <vikas@cpan.org>',
     dist_abstract => 'Alien module for Capstone Engine from www.capstone-engine.org',
+    create_readme => 1,
     configure_requires => {
         'Module::Build' => 0,
         'Alien::Base::ModuleBuild' => '0.029',
+        'Pod::Readme' => 0,
     },
     build_requires => {
         'Alien::Base::ModuleBuild' => '0.029',
         'Test::Alien' => 0,
         'Module::Build' => 0,
-        'Test::More' => 0,
+        'Test2' => 0,
     },
     requires => {
         'Alien::Base' => '0.029',
@@ -33,7 +35,8 @@ my $build = Alien::Base::ModuleBuild->new(
         'Alien::gmake' => 0.11,
     },
     alien_build_commands => [
-        '%{gmake} clean all',
+        '%{gmake} clean all PREFIX=%s',
+        '%{gmake} check PREFIX=%s',
     ],
     alien_install_commands => [
         '%{gmake} install PREFIX=%s',
