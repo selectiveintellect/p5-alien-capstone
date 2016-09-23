@@ -1,7 +1,7 @@
 package Alien::Capstone;
 use parent 'Alien::Base';
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 1;
 
@@ -35,7 +35,7 @@ C<Makefile.PL> file if you're using ExtUtils::MakeMaker.
 
 =head1 VERSION
 
-0.05
+0.06
 
 =head1 METHODS
 

@@ -1,6 +1,8 @@
 use strict;
 use warnings;
 use Alien::Base::ModuleBuild;
+$Alien::Base::ModuleBuild::Verbose = 1;
+$Alien::Base::ModuleBuild::Force = 1;
 
 my $build = Alien::Base::ModuleBuild->new(
     module_name => 'Alien::Capstone',
@@ -27,8 +29,9 @@ my $build = Alien::Base::ModuleBuild->new(
         protocol => 'http',
         host => 'github.com',
         location => '/aquynh/capstone/archive/',
-        exact_filename => '3.0.4.tar.gz',
-        exact_version => '3.0.4',
+        exact_filename => 'master.tar.gz',
+        exact_version => '4.0',
+        c_compiler_required => 1,
     },
     alien_msys => 1,
     alien_bin_requires => {
@@ -41,7 +44,6 @@ my $build = Alien::Base::ModuleBuild->new(
     alien_install_commands => [
         '%{gmake} install PREFIX=%s',
     ],
-    alien_version_check => '%{pkg_config} --atleast-version 3.0.4 %n && %{pkg_config} --modversion %n',
     meta_merge => {
         resources => {
             repository => 'https://github.com/selectiveintellect/p5-alien-capstone',

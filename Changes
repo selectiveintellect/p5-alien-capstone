@@ -1,3 +1,6 @@
+- 0.06
+    - always build github master
+
 - 0.05
     - during the make run PREFIX needs to be set
 

@@ -17,6 +17,7 @@
       "build" : {
          "requires" : {
             "Alien::Base::ModuleBuild" : "0.029",
+            "Alien::gmake" : "0.11",
             "Module::Build" : "0",
             "Test2" : "0",
             "Test::Alien" : "0"
