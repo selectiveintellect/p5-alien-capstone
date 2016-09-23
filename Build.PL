@@ -30,7 +30,7 @@ my $build = Alien::Base::ModuleBuild->new(
         host => 'github.com',
         location => '/aquynh/capstone/archive/',
         exact_filename => 'master.tar.gz',
-        exact_version => '4.0',
+        exact_version => '3.0.4',
         c_compiler_required => 1,
     },
     alien_msys => 1,

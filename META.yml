@@ -22,7 +22,7 @@ name: Alien-Capstone
 provides:
   Alien::Capstone:
     file: lib/Alien/Capstone.pm
-    version: '0.05'
+    version: '0.06'
 requires:
   Alien::Base: '0.029'
   File::ShareDir: '1.00'
@@ -30,4 +30,4 @@ resources:
   bugtracker: https://github.com/selectiveintellect/p5-alien-capstone/issues
   license: http://www.opensource.org/licenses/mit-license.php
   repository: https://github.com/selectiveintellect/p5-alien-capstone
-version: '0.05'
+version: '0.06'

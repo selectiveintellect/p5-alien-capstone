@@ -40,7 +40,7 @@
    "provides" : {
       "Alien::Capstone" : {
          "file" : "lib/Alien/Capstone.pm",
-         "version" : "0.05"
+         "version" : "0.06"
       }
    },
    "release_status" : "stable",
@@ -55,5 +55,5 @@
          "url" : "https://github.com/selectiveintellect/p5-alien-capstone"
       }
    },
-   "version" : "0.05"
+   "version" : "0.06"
 }
