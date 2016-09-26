@@ -1,3 +1,6 @@
+- 0.07
+    - Using Test::More instead of Test::Alien
+
 - 0.06
     - always build github master
 

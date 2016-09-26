@@ -13,6 +13,10 @@ SYNOPSIS
     You can use it in the Build.PL file if you're using Module::Build or
     Makefile.PL file if you're using ExtUtils::MakeMaker.
 
+                use Alien::Capstone;
+                # ...
+                die "Alien::Capstone isn't installed" unless &Alien::Capstone::is_installed();
+                # ...
                 my $capstone= Alien::Capstone->new;
                 my $build = Module::Build->new(
                     ...
@@ -23,7 +27,7 @@ SYNOPSIS
 
 VERSION
 
-    0.06
+    0.07
 
 METHODS
 
@@ -40,6 +44,10 @@ METHODS
 
       This method provides the linker flags needed to use the library on
       the system.
+
+    is_installed
+
+      This method checks to see if Capstone has been installed correctly.
 
 SEE ALSO
 

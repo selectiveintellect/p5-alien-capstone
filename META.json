@@ -19,8 +19,7 @@
             "Alien::Base::ModuleBuild" : "0.029",
             "Alien::gmake" : "0.11",
             "Module::Build" : "0",
-            "Test2" : "0",
-            "Test::Alien" : "0"
+            "Test::More" : "0"
          }
       },
       "configure" : {
@@ -40,7 +39,7 @@
    "provides" : {
       "Alien::Capstone" : {
          "file" : "lib/Alien/Capstone.pm",
-         "version" : "0.06"
+         "version" : "0.07"
       }
    },
    "release_status" : "stable",
@@ -55,5 +54,5 @@
          "url" : "https://github.com/selectiveintellect/p5-alien-capstone"
       }
    },
-   "version" : "0.06"
+   "version" : "0.07"
 }

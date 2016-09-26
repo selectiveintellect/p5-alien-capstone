@@ -1,7 +1,12 @@
 package Alien::Capstone;
 use parent 'Alien::Base';
+use Alien::Capstone::ConfigData;
 
-our $VERSION = '0.06';
+our $VERSION = '0.07';
+
+sub is_installed {
+    return Alien::Capstone::ConfigData->config('finished_installing');
+}
 
 1;
 
@@ -24,6 +29,10 @@ installation if any. It is currently setup to look for version 3.0.4.
 You can use it in the C<Build.PL> file if you're using Module::Build or
 C<Makefile.PL> file if you're using ExtUtils::MakeMaker.
 
+            use Alien::Capstone;
+            # ...
+            die "Alien::Capstone isn't installed" unless &Alien::Capstone::is_installed();
+            # ...
             my $capstone= Alien::Capstone->new;
             my $build = Module::Build->new(
                 ...
@@ -35,7 +44,7 @@ C<Makefile.PL> file if you're using ExtUtils::MakeMaker.
 
 =head1 VERSION
 
-0.06
+0.07
 
 =head1 METHODS
 
@@ -52,6 +61,10 @@ This method provides the compiler flags needed to use the library on the system.
 =item B<libs>
 
 This method provides the linker flags needed to use the library on the system.
+
+=item B<is_installed>
+
+This method checks to see if Capstone has been installed correctly.
 
 =back
 

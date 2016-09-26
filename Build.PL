@@ -17,9 +17,8 @@ my $build = Alien::Base::ModuleBuild->new(
     },
     build_requires => {
         'Alien::Base::ModuleBuild' => '0.029',
-        'Test::Alien' => 0,
+        'Test::More' => 0,
         'Module::Build' => 0,
-        'Test2' => 0,
     },
     requires => {
         'Alien::Base' => '0.029',
